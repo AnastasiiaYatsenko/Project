@@ -80,3 +80,14 @@ p {
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.link {
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.link:hover {
+    color: white;
+}
