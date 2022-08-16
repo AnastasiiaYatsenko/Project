@@ -13,6 +13,7 @@
 </head>
 <body>
    <div class="container">
+    <div class="weather-box">
     <h1>
         <i class="fa-solid fa-temperature-three-quarters thermometer"></i>
         Weather <br> forecast
@@ -35,14 +36,15 @@
         <div class="row">
             <div class="col-5">
                 <span class="weather-now">
-                    <span id="icon">⛅</span>  
+                    <img src="" alt="" class="icon" id="icon">
                     <span id="weather-now"></span> 
                     °C
                 </span> 
             </div>
             <div class="col-5">
                 <span>
-                    <span id="description"></span>
+                    <span class="description"
+                    id="description"></span>
                     <hr>
                     Wind: <span id="wind-speed"></span> km/h
                     <br>
@@ -97,8 +99,9 @@
             </div>
         </div>
     </div>
+    </div>
     <div class="link">
-        <a href="https://github.com/AnastasiiaYatsenko/Project" class="link">Open-source code,</a> by Anastasiia Yatsenko 
+        <a href="https://github.com/AnastasiiaYatsenko/Project" class="link" target="_blank">Open-source code</a> by Anastasiia Yatsenko 
     </div>
 </div>
 <script src="src/index.js"></script>

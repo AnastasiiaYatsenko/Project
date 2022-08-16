@@ -18,7 +18,6 @@ currentDate = document.querySelector("#current-time");
 currentDate.innerHTML = `${date} ${month}, ${today} ${hours}:${minutes}`;
 
 
-
 function searchCity(city) {
     let apiKey = "486d80106caa3182b4a0eb80c7778807"; 
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -41,20 +40,22 @@ function showWeather(response) {
     let weatherNow = document.querySelector("#weather-now");
     weatherNow.innerHTML = Math.round(response.data.main.temp);
     let description = document.querySelector("#description");
-    description.innerHTML = response.data.weather[0].main;
+    description.innerHTML = response.data.weather[0].description;
     let wind = document.querySelector("#wind-speed");
     wind.innerHTML = Math.round(response.data.wind.speed);
     let humidity = document.querySelector("#humidity");
     humidity.innerHTML = response.data.main.humidity;
+    let icon = document.querySelector("#icon");
+    icon.setAttribute('src', `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+    icon.setAttribute('alt', `http://openweathermap.org/img/wn/${response.data.weather[0].description}@2x.png`);
 }  
-
-
-
 
 let searchButton = document.querySelector("#search-form");
 searchButton.addEventListener("submit", searchTown);
 
 searchCity("Kyiv");
+
+
 
 
 
