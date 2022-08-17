@@ -41,13 +41,15 @@ p {
 }
 
 .location-form .search {
-    border: 2px solid white;
-    border-radius: 30px;
+    border: none;
+    border-radius: 20px;
     font-size: 18px;
     width: 40%;
-    height: 30px;
+    height: 40px;
     text-indent: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 
 .loop {
     color: white;
