@@ -14,13 +14,15 @@
 <body>
    <div class="container">
     <div class="weather-box">
-    <h1>
-        <i class="fa-solid fa-temperature-three-quarters thermometer"></i>
-        Weather <br> forecast
-    </h1>
+        <span class="title">
+            <h1>
+                <i class="fa-solid fa-temperature-three-quarters thermometer"></i>
+                Weather <br> forecast
+            </h1>
+        </span>
     <span class="location-form">
         <form id="search-form">
-            <input type="search" placeholder="Search for location" class="search" id="search-input" autocomplete="on">
+            <input type="search" placeholder="Enter your city..." class="search" id="search-input" autocomplete="on">
             <i class="fa-solid fa-magnifying-glass loop"></i>
         </form>
     </span>
@@ -55,51 +57,11 @@
       </p>
     </div>
   </div>
-  <div class="5-day-forecast">
-    <p>5 Day Forecast</p>
+  <p class="title-forecast">
+    5-Day Forecast
+  </p>
+  <div class="five-day-forecast" id="forecast"> 
   </div>
-  <div class="row">
-    <div class="col">
-        <div class="card">
-            <div class="card-body">
-                <h6 class="day">Fri</h6>
-                🌧️ +28°C
-            </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card">
-            <div class="card-body">
-                <h6 class="day">Sat</h6>
-                ⛅ +30°C
-            </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card">
-            <div class="card-body">
-                <h6 class="day">Sun</h6>
-                ⛈️ +28°C
-            </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card">
-            <div class="card-body">
-                <h6 class="day">Mon</h6>
-                ⛅ +26°C
-            </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card">
-            <div class="card-body">
-                <h6 class="day">Tue</h6>
-                ⛅ +26°C
-            </div>
-        </div>
-    </div>
-    </div>
     <div class="link">
         <a href="https://github.com/AnastasiiaYatsenko/Project" class="link" target="_blank">Open-source code</a> by Anastasiia Yatsenko 
     </div>
