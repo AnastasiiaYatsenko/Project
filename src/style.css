@@ -3,7 +3,8 @@ body {
     display: block;
     margin: 0 auto;
     background: #2566A8;
-    width: 850px;
+    width: 70%;
+    max-width: 800px;
 }
 
 h1 {
